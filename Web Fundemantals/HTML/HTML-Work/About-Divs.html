@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example - Demo</title>
+</head>
+<body>
+
+    <!-- Simple Demo Form -->
+    <form action="/process" method="POST">
+
+        <!-- Name field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..." required>
+        </div>
+
+        <!-- Email field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" id="offers-simple" name="offers" checked>
+            <label for="offers-simple">I would like to receive email offers!</label>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <br><br><br>
+
+    <!-- Homework Assignment: Signup Form -->
+    <form action="/register" method="POST">
+
+        <!-- Full Name -->
+        <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required placeholder="Your full name...">
+        </div>
+
+        <!-- Email Address -->
+        <div>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required placeholder="example@gmail.com">
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6"
+                placeholder="Minimum 6 characters">
+        </div>
+
+        <!-- Gender -->
+        <fieldset>
+            <legend>Gender Identity:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="non-binary" name="gender" value="non-binary">
+            <label for="non-binary">Non-binary</label>
+
+            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+            <label for="prefer-not-to-say">Prefer not to say</label>
+        </fieldset>
+
+        <!-- Birthday -->
+        <div>
+            <label for="dob">Birthday:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <!-- Photo Upload -->
+        <div>
+            <label for="photo">Upload Your Picture:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+
+        <!-- Country -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select your country --</option>
+                <option value="palestine">Palestine</option>
+                <option value="jordan">Jordan</option>
+                <option value="iraq">Iraq</option>
+                <option value="syria">Syria</option>
+                <option value="lebanon">Lebanon</option>
+            </select>
+        </div>
+
+        <!-- Description -->
+        <div>
+            <label for="comment">A Short Description About Myself:</label>
+            <textarea id="comment" name="comment" cols="30" rows="4"
+                placeholder="Write something about yourself..."></textarea>
+        </div>
+
+        <!-- Email Offers -->
+        <div>
+            <input type="checkbox" id="offers-signup" name="offers" checked>
+            <label for="offers-signup">I would like to receive email offers!</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Create Account</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
