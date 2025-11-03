@@ -1,0 +1,116 @@
+/* ==========================
+   ORIGINAL VERSION
+=========================== */
+/*
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cloud{
+    font-size: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    margin: 7px;
+    padding: 4px;
+}
+
+#cloud > span{
+    color: aqua;
+}
+
+#project{
+    font-size: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: purple;
+    color: whitesmoke;
+    margin: 7px;
+    padding: 4px;
+    text-align: center;
+}
+
+#contact{
+    font-size: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(35, 120, 201);
+    color: rgb(70, 174, 223);
+    margin: 7px;
+    padding: 4px;
+    text-align: right;
+    text-decoration: underline;
+}
+*/
+
+/* ==========================
+   REFINED VERSION
+=========================== */
+
+/* --- GLOBAL RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* keeps sizing predictable */
+}
+
+/* --- BASE STYLES --- */
+body {
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* --- HEADER TITLE --- */
+.title {
+    font-size: 48px;       /* valid unit */
+    font-weight: 800;      /* bold effect */
+    background-color: #000;
+    color: whitesmoke;
+    margin: 10px;
+    padding: 8px;
+    text-align: left;
+    letter-spacing: 1px;
+    border-radius: 5px;    /* soft corner for modern feel */
+    transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+    color: cyan;
+    letter-spacing: 3px;
+}
+
+/* --- HIGHLIGHT COLOR --- */
+.highlight {
+    color: aqua;
+}
+
+/* --- SUBTITLES --- */
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: whitesmoke;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* --- PROJECT SECTION --- */
+.projects {
+    background-color: purple;
+    text-align: center;
+}
+
+/* --- CONTACT SECTION --- */
+.contact {
+    background-color: rgb(35, 120, 201);
+    color: rgb(70, 174, 223);
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* --- Optional hover for fun --- */
+.contact:hover {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
