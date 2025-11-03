@@ -1,0 +1,217 @@
+/* =====================================================
+IMPROVED VERSION — POLISHED DESIGN
+===================================================== */
+
+/* --- GLOBAL IMPROVEMENTS --- */
+body {
+    background-color: #f3f4f6; /* softer neutral gray */
+    line-height: 1.6;          /* better text spacing */
+    color: #111827;            /* modern dark text tone */
+}
+
+/* --- BASE SECTION STYLES --- */
+.section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* --- HEADER REFINED --- */
+.header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    text-align: left;
+}
+.title {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+.title:hover {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+.highlight {
+    color: #38bdf8; /* unified accent tone */
+}
+
+/* --- HEADER PARAGRAPH --- */
+.subtitle-text {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+}
+
+/* --- PROJECTS REFINED --- */
+.projects {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    text-align: center;
+    color: #f9fafb;
+}
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section-text {
+    font-size: 1rem;
+    color: #e0e7ff;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- CONTACT REFINED --- */
+.contact {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: #cbd5e1;
+    text-align: right;
+}
+.contact-link {
+    color: #38bdf8;
+    text-decoration: underline;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.contact-link:hover {
+    color: #f8fafc;
+    text-decoration: none;
+}
+
+/* =====================================================
+   ORIGINAL VERSION — YOUR BASE
+   (Now fully commented for learning)
+===================================================== */
+
+/* --- GLOBAL RESET ---
+   The * selector targets every element on the page.
+   We remove all default browser margins and paddings
+   so every layout starts clean and consistent.
+   'box-sizing: border-box' ensures that width/height
+   calculations include padding and border, which makes
+   layouts far easier to control later.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* keeps sizing predictable */
+}
+
+/* --- BASE STYLES ---
+   These styles apply to the whole page.
+   - Sets a modern sans-serif font stack.
+   - Light gray background gives a neutral base tone.
+   - Text color #222 is a dark gray, softer than pure black.
+*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Grande', 
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* --- HEADER TITLE ---
+   Styles the main heading at the top of the page.
+   - Big font size (48px) to dominate the hierarchy.
+   - Heavy weight (800) for bold emphasis.
+   - Black background contrasts with the light page.
+   - 'whitesmoke' text color makes it readable.
+   - Margin and padding add space around and inside.
+   - Left-aligned for a traditional headline feel.
+   - Slight letter spacing opens the text a bit.
+   - Rounded corners soften the harsh box edges.
+   - Transition prepares smooth animations on hover.
+*/
+.title {
+    font-size: 48px;       /* font height */
+    font-weight: 800;      /* boldness */
+    background-color: #000;
+    color: whitesmoke;
+    margin: 10px;          /* outer spacing */
+    padding: 8px;          /* inner spacing */
+    text-align: left;
+    letter-spacing: 1px;
+    border-radius: 5px;    /* slightly rounded corners */
+    transition: all 0.3s ease-in-out; /* smooth hover effects */
+}
+
+/* --- HEADER HOVER EFFECT ---
+   When the user hovers over the title:
+   - The text color switches to cyan for emphasis.
+   - Letter spacing widens to create a subtle animation.
+*/
+.title:hover {
+    color: cyan;
+    letter-spacing: 3px;
+}
+
+/* --- HIGHLIGHT COLOR ---
+   Used for any <span> inside the title.
+   Changes its text to aqua for contrast and
+   adds visual interest within the same heading.
+*/
+.highlight {
+    color: aqua;
+}
+
+/* --- SUBTITLES ---
+   Styles subheadings like <h2> or <h3>.
+   - Large but smaller than the main title.
+   - White text for contrast against dark backgrounds.
+   - Padding and margin give consistent spacing.
+   - Rounded corners for visual consistency.
+*/
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: whitesmoke;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* --- PROJECT SECTION ---
+   Targets the “Completed Projects” block.
+   - Purple background gives identity to that section.
+   - Centers all text horizontally.
+*/
+.projects {
+    background-color: purple;
+    text-align: center;
+}
+
+/* --- CONTACT SECTION ---
+   Styles the “Contact Us” area.
+   - Blue background with lighter blue text.
+   - Right-aligned text for visual balance.
+   - Underlined text emphasizes contact info.
+*/
+.contact {
+    background-color: rgb(35, 120, 201);
+    color: rgb(70, 174, 223);
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* --- CONTACT HOVER EFFECT ---
+   When hovering over the contact section:
+   - Removes underline for a subtle animation.
+   - Changes text to white for visual feedback.
+   - Transition smooths the color change.
+*/
+.contact:hover {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
